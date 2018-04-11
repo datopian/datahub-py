@@ -93,8 +93,6 @@ Thus, the new `datahub-py` lib will be not just a copy of `datahub-client`, but 
 - **`Package`** class from https://github.com/frictionlessdata/datapackage-py, that represents a dataset. Original `Package` class will be extended with `dump()` method.
 
 **Note:** *Datapackage, dataset, package* - all this words often means the same - data file(s) plus the 'descriptor' file, that contains meta-information. See [dataset specification](https://frictionlessdata.io/docs/data-package/).
-`Package` class .
-
 
 
 ### Features to support
