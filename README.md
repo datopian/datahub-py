@@ -1,7 +1,16 @@
 Python SDK for DataHub.io
 =========================
 
-[TOC]
+## Introduction:
+
+`datahub-py` library is a python interface for the datahub.io server.
+
+The [DataHub](http://datahub.io/) platform stores a lot of different datasets - which are packages of useful data alongside with the description (here is [the dataset specification](https://frictionlessdata.io/docs/data-package/)). The data, stored on the DataHub, has a nice structure, views and a description that helps people to get insights.
+
+You can also store and share your own datasets on the DataHub
+
+As a programmer, you can create your data-driven project, using DataHub as a background. Or you may want to automate the process of getting or storing the data.  
+In any case working with our platform is a piece of cake with this API library :wink:
 
 ## User stories
 
@@ -74,7 +83,7 @@ for dataset in global_warming:
 
 This future lib is called **"datahub-py"**.
 
-We also have a JS `datahub-client` library already, that was extracted from the `data-cli` program. 
+We also have a JS [datahub-client](https://github.com/datahq/datahub-client) library already, that was extracted from the [data-cli](https://github.com/datahq/data-cli) program. 
 `Datahub-client` represents the JS interface to the DataHub, but in fact it is a bunch of `data-cli` modules, and has no elegant structure.
 Thus, the new `datahub-py` lib will be not just a copy of `datahub-client`, but designed from scratch and take some of the js lib features.
 
