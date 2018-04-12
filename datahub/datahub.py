@@ -13,12 +13,6 @@ class DataHub(object):
     API_Key could be found on the DataHub user page.
 
     From the program side DataHub class gives you methods to
-        - init a new data-package from the existing data file(s)
-
-    !   - validate data & schema in the data-package
-    !     (validation may be implemented in the Package class, we
-    !      are not sure yet)
-
         - push a data-package to the datahub
         - search data-packages on the datahub
         - open a data-package from the datahub
@@ -55,27 +49,6 @@ class DataHub(object):
             # id, name, username, email, provider_id, join_date
         }
 
-    # TODO: rename 'init' to 'init_data_package' ?
-    # This method initiates a data-package, not the class instance :)
-    # May be we should rename it more obviously?
-    def init(self, path, interactive=False):
-        """
-        Init a new data-package or update an existing one.
-        Data-package specification:
-            https://frictionlessdata.io/docs/data-package/
-
-        :param path: String:
-            - path to single file
-            - path to folder where you suppose to init a data-package
-        :param interactive:
-        :return:
-        """
-        raise NotImplementedError
-        return package
-
-    def validate(self, package):
-        raise NotImplementedError
-
     def push(self, package):
         """
         Uploads a package (dataset) to the DataHub server.
@@ -85,10 +58,12 @@ class DataHub(object):
         """
         raise NotImplementedError
 
-    def search(self, keywords):
+    def search(self, keywords, owner='', findability=''):
         """
         Search packages on the DataHub server.
         :param keywords:
+        :param owner:
+        :param findability:
         :return:
         """
         raise NotImplementedError
